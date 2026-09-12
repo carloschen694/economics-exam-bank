@@ -1,0 +1,3 @@
+school,year,subject,exam_name,question_text,question_number,question_type,options,answer,explanation,tags,difficulty,points
+NationalTaiwanUniversity,113,microeconomics,Micro 113 2024,What is the price elasticity of demand?,1,single_choice,"{\"A\":\"0.5\",\"B\":\"1.0\",\"C\":\"1.5\",\"D\":\"2.0\"}",C,Elasticity measures responsiveness.,elasticity,price,3,10.0
+NationalTaiwanUniversity,113,microeconomics,Micro 113 2024,Calculate the consumer surplus for a linear demand curve.,2,calculation,,10,Consumer surplus is area under demand.,consumer surplus,2,5.0
