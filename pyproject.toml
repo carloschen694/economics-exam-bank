@@ -1,0 +1,29 @@
+[project]
+name = "economics-exam-bank"
+version = "0.1.0"
+description = "經濟學研究所考試題庫與考試練習 API 後端服務"
+readme = "README.md"
+authors = [
+    { name = "carloschen694", email = "kueimin8@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.141.1",
+    "pydantic>=2.13.5",
+    "pydantic-settings>=2.15.0",
+    "sqlmodel>=0.0.42",
+    "uvicorn[standard]>=0.52.4",
+]
+
+[project.scripts]
+economics-exam-bank = "economics_exam_bank:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+]
