@@ -68,3 +68,8 @@ Desktop.ini
 # Logs
 logs/
 *.log
+
+# Raw downloads & binaries
+research_downloads/
+*.pdf
+*.bin
