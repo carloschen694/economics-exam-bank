@@ -21,9 +21,22 @@ app = FastAPI(
     version=settings.VERSION,
     description="專門提供台灣與海外經濟學研究所考古題庫檢索、題組測驗與練習之後端 API 服務。",
     lifespan=lifespan,
-    docs_url="/docs",
+    docs_url=None,  # 自訂 /docs 使用穩定的 cdnjs CDN
     redoc_url="/redoc",
 )
+
+
+@app.get("/docs", include_in_schema=False)
+def custom_swagger_ui_html():
+    from fastapi.openapi.docs import get_swagger_ui_html
+
+    return get_swagger_ui_html(
+        openapi_url=app.openapi_url,
+        title=f"{app.title} - Swagger UI",
+        oauth2_redirect_url=app.swagger_ui_oauth2_redirect_url,
+        swagger_js_url="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.0/swagger-ui-bundle.min.js",
+        swagger_css_url="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.0/swagger-ui.min.css",
+    )
 
 # CORS 配置
 app.add_middleware(
