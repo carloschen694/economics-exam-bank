@@ -1,12 +1,18 @@
 from collections.abc import AsyncGenerator
 from contextlib import asynccontextmanager
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from .api.router import api_router
 from .config import settings
 from .database import create_db_and_tables
 # Import models to ensure SQLModel registers table schemas before creating tables
 from . import models  # noqa: F401
+
+BASE_DIR = Path(__file__).resolve().parent
+STATIC_DIR = BASE_DIR / "static"
 
 
 @asynccontextmanager
@@ -50,16 +56,20 @@ app.add_middleware(
 # 掛載 API 路由
 app.include_router(api_router, prefix=settings.API_V1_PREFIX)
 
+# 掛載靜態網頁驗收介面
+if STATIC_DIR.exists():
+    app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+
+
+@app.get("/web", include_in_schema=False)
+@app.get("/app", include_in_schema=False)
+def web_ui():
+    return FileResponse(STATIC_DIR / "index.html")
+
 
 @app.get("/", tags=["Root"])
-def root() -> dict[str, str]:
-    return {
-        "message": f"歡迎使用 {settings.PROJECT_NAME}",
-        "version": settings.VERSION,
-        "docs": "/docs",
-        "redoc": "/redoc",
-        "health": f"{settings.API_V1_PREFIX}/health",
-    }
+def root():
+    return FileResponse(STATIC_DIR / "index.html")
 
 
 def main() -> None:

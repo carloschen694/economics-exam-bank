@@ -36,8 +36,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "B, C, D",
+    "explanation": "【選項詳細剖析】\nA. 正確：正常財（Normal Good）的所得效果與替代效果方向一致，當價格下降時，替代效果與所得效果皆促使需求量增加，故需求曲線必為負斜率（downward sloping）。\nB. 錯誤：中性財（Neutral Good）的需求量不受所得變動影響（所得彈性為 0），其恩格爾曲線（Engel curve）為一垂直線，並非正斜率（upward sloping）。\nC. 錯誤：炫耀財（Veblen Good）具備炫耀性消費特質，價格越高需求量反而越大，其需求曲線為正斜率（upward sloping），而非負斜率。\nD. 錯誤：劣等財（Inferior Good）當所得增加時需求量減少，其恩格爾曲線為負斜率（downward sloping），而非正斜率。\nE. 正確：吉芬財（Giffen Good）的定義為價格上升需求量反而增加的特殊財貨，必須滿足「為劣等財」且「所得效果大於替代效果」，故吉芬財必為劣等財。\n\n題目詢問何者「不正確（not correct）」，故選 B, C, D。"
   },
   {
     "id": "NTPU_113_MICRO_Q02",
@@ -78,8 +78,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "A, B, C, D, E",
+    "explanation": "【數學推導與經濟分析】\n效用函數為準線性效用 $u(x, y) = \\sqrt{x} + y$，預算限制式為 $3x + 2y = 10$。\n1. 一階極大化條件：\n   $$MRS_{xy} = \\frac{MU_x}{MU_y} = \\frac{1}{2\\sqrt{x}} = \\frac{P_x}{P_y} = \\frac{3}{2}$$\n   解得 $\\sqrt{x} = \\frac{1}{3} \\implies x^* = \\frac{1}{9}$。\n2. 帶入預算限制式求 $y^*$：\n   $$3\\left(\\frac{1}{9}\\right) + 2y = 10 \\implies 2y = 10 - \\frac{1}{3} = \\frac{29}{3} \\implies y^* = \\frac{29}{6}$$\n3. 各選項檢視：\n   - A: $x^* = 1/9$，正確。\n   - B: 在準線性效用下，只要所得 $I \\ge P_x x^*$，對 $x$ 的需求即固定為 $1/9$，與所得無關（所得彈性為 0），故 $x$ 為中性財（neutral good），正確。\n   - C: $y^* = 29/6$，正確。\n   - D: 所得增加時完全反映在 $y$ 的消費量增加，故 $y$ 為正常財（normal good），正確。\n   - E: 若所得極低（$I < \\frac{P_y^2}{4P_x}$）或價格極端時，Mary 無法負擔內部解需求，最佳決策將出現邊角解（corner solution: $y=0, x=I/P_x$），正確。\n\n故全選 A, B, C, D, E。"
   },
   {
     "id": "NTPU_113_MICRO_Q03",
@@ -118,8 +118,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "A",
+    "explanation": "【Hicksian 效果分解推導】\n初始價格 $P_{x0}=3, P_{y0}=2$，所得 $I=10$。初始最佳選擇 $x_0=1/9, y_0=29/6$，初始效用 $u_0 = \\frac{1}{3} + \\frac{29}{6} = \\frac{31}{6}$。\n價格變動：$P_{y1}=5$，$P_{x1}=3$ 不變。\n1. 新價格下的最優需求比例仍由 $MRS = \\frac{1}{2\\sqrt{x}} = \\frac{3}{5} \\implies x_1 = \\frac{25}{36}$。\n2. 希克斯補償（Hicksian Compensation）：保持原效用 $u_0 = 31/6$，面臨新價格。\n   效用條件：$\\sqrt{x_h} + y_h = \\frac{5}{6} + y_h = \\frac{31}{6} \\implies y_h = \\frac{26}{6} = \\frac{13}{3}$。\n3. 替代效果（Substitution Effect, SE）：\n   - 對 $y$ 的替代效果 $\\Delta y^{SE} = y_h - y_0 = \\frac{13}{3} - \\frac{29}{6} = -\\frac{1}{2}$。（選項 A 正確）\n   - 對 $x$ 的替代效果 $\\Delta x^{SE} = x_h - x_0 = \\frac{25}{36} - \\frac{4}{36} = \\frac{21}{36} > 0$。（選項 B 稱必為負值，錯誤）\n4. 所得效果（Income Effect, IE）：\n   - 新價格下的最終需求 $y_1$：$3(25/36) + 5y_1 = 10 \\implies y_1 = \\frac{19}{12}$。\n   - 對 $y$ 的所得效果 $\\Delta y^{IE} = y_1 - y_h = \\frac{19}{12} - \\frac{52}{12} = -\\frac{33}{12} = -\\frac{11}{4}$。（選項 C 稱 -31/12，錯誤）\n   - 對 $x$ 的所得效果 $\\Delta x^{IE} = x_1 - x_h = 0$。（選項 D 稱必為負值，錯誤）\n\n故選 A。"
   },
   {
     "id": "NTPU_113_MICRO_Q04",
@@ -161,8 +161,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "A, D",
+    "explanation": "【生產函數與成本極小化分析】\n生產函數 $q = L^{1/2} K^{1/3}$，工資 $w$，利息率 $r=1$。\n1. 規模報酬（RTS）：\n   次數和 $\\alpha + \\beta = 1/2 + 1/3 = 5/6 < 1$，表現為規模報酬遞減（Decreasing Returns to Scale, DRS），選項 A 正確。\n2. 替代彈性：\n   Cobb-Douglas 生產函數之要素替代彈性固定等於 1，非 $2/3$，選項 B 錯誤。\n3. 要素需求函數推導：\n   極小化成本成本目標 $wL + K$ 滿足 $MRTS = \\frac{MP_L}{MP_K} = \\frac{3K}{2L} = w \\implies K = \\frac{2}{3}wL$。\n   帶入產量限制 $10 = L^{1/2} (2wL/3)^{1/3} = L^{5/6} (2w/3)^{1/3} \\implies L^* = 10^{6/5} \\left(\\frac{3}{2w}\\right)^{2/5}$。選項 C 之公式不正確。\n4. 規模不經濟：\n   因規模報酬遞減（DRS），長期平均成本（LAC）隨產量增加而遞增，產生規模不經濟（Diseconomies of Scale），選項 D 正確。\n\n故選 A, D。"
   },
   {
     "id": "NTPU_113_MICRO_Q05",
@@ -203,8 +203,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "A, C, E",
+    "explanation": "【成本曲線與競爭市場供給分析】\n短期總成本 $TC = 0.1q^3 + 10q^2 + 400q + 520$，其中 520 為沉沒成本（Sunk Cost）。\n1. 平均固定成本（AFC）：\n   $AFC = 520/q$，當 $q > 0$ 增加時 strictly decreasing，選項 A 正確。\n2. 平均可變成本（AVC）：\n   $VC = 0.1q^3 + 10q^2 + 400q \\implies AVC = 0.1q^2 + 10q + 400$。\n   對 $q>0$，$\\frac{dAVC}{dq} = 0.2q + 10 > 0$，故 AVC 為嚴格遞增（strictly increasing），選項 B 錯誤。\n3. 邊際成本（MC）：\n   $MC = \\frac{dTC}{dq} = 0.3q^2 + 20q + 400$。\n   對 $q>0$，$\\frac{dMC}{dq} = 0.6q + 20 > 0$，MC 嚴格遞增，選項 C 正確。\n4. 歇業價格（Shutdown Price）：\n   因 520 為沉沒成本，歇業價格等於可變成本最小值 $\\min AVC$。當 $q \\to 0$ 時 $\\min AVC = 400$，非 50，選項 D 錯誤。\n5. 長期市場供給曲線：\n   新進入者必須在較劣質土地生產使得成本提高，此為成本遞增產業（Increasing-Cost Industry），其長期市場供給曲線為正斜率（upward sloping），選項 E 正確。\n\n故選 A, C, E。"
   },
   {
     "id": "NTPU_113_MICRO_Q06",
@@ -247,8 +247,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "D",
+    "explanation": "【純交換經濟與契約曲線推導】\nMary: $u_m = x_m + 2y_m$（完全替代品，無異曲線斜率 $-1/2$），稟賦 $(3/4, 1/4)$。\nCharles: $u_c = \\min\\{x_c, y_c\\}$（完全補充品，拐點在 $x_c = y_c$），稟賦 $(1/4, 3/4)$。\n總資源 $X_{total} = 1, Y_{total} = 1$。\n1. 選項 A 錯誤：Mary 視兩財貨為完全替代品，非完全補充品。\n2. 選項 B 錯誤：Charles 的稟賦中 $x_c=1/4, y_c=3/4$，$x$ 是其瓶頸資源。單向將 $x$ 送給 Mary 會降低 Charles 的效用，無法達到 Pareto 改善。\n3. 選項 C 錯誤：契約曲線（核心）滿足 Charles 位於拐點 $x_c = y_c \\implies x_m = y_m$。\n   個人理性約束：\n   - Charles 初始效用 $1/4 \\implies 1 - x_m \\ge 1/4 \\implies x_m \\le 3/4$。\n   - Mary 初始效用 $3/4 + 2(1/4) = 5/4 \\implies 3x_m \\ge 5/4 \\implies x_m \\ge 5/12$。\n   契約曲線範圍應為 $5/12 \\le x_m \\le 3/4$，非題目給定的 $1/4 \\le x_m \\le 7/12$。\n4. 選項 D 正確：在價格比 $P_x/P_y = 1/2$ 下，Mary 的無異曲線與預算線重合，Charles 選擇拐點，存在唯一的競爭均衡。\n\n故選 D。"
   },
   {
     "id": "NTPU_113_MICRO_Q07",
@@ -291,8 +291,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "B",
+    "explanation": "【不許價格歧視之獨佔定價】\n市場 1 需求 $q_1 = 50 - 0.5p$（$p \\le 100$）；市場 2 需求 $q_2 = 55 - p$（$p \\le 55$）。成本函數 $c(q) = 0.5q^2$。\n1. 若僅在市場 1 銷售（$p > 55$）：\n   $p = 100 - 2q \\implies \\pi_1 = (100 - 2q)q - 0.5q^2 = 100q - 2.5q^2$。\n   $\\frac{d\\pi_1}{dq} = 100 - 5q = 0 \\implies q = 20, p = 60$。\n   極大利潤 $\\pi_1 = 100(20) - 2.5(400) = 1000$。\n2. 若在兩個市場同時銷售（$p \\le 55$）：\n   總需求 $Q = q_1 + q_2 = 105 - 1.5p \\implies p = 70 - \\frac{2}{3}Q$。\n   利潤 $\\pi_2 = \\left(70 - \\frac{2}{3}Q\\right)Q - 0.5Q^2 = 70Q - \\frac{7}{6}Q^2$。\n   $\\frac{d\\pi_2}{dQ} = 70 - \\frac{7}{3}Q = 0 \\implies Q = 30, p = 50$。\n   此時 $q_1 = 25, q_2 = 5$。\n   極大利潤 $\\pi_2 = 70(30) - \\frac{7}{6}(900) = 1050$。\n3. 比較利潤：$\\pi_2 (1050) > \\pi_1 (1000)$，故 Apple 會選擇在兩個市場同時銷售（定價 $p=50$）。\n\n選項 B 正確；A, C, D 皆錯誤。\n\n故選 B。"
   },
   {
     "id": "NTPU_113_MICRO_Q08",
@@ -333,8 +333,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "A, C, D",
+    "explanation": "【資訊不對稱與保險選擇分析】\n謹慎型 C (事故率 1/3)；莽撞型 R (事故率 2/3)。原始財富 100，無保險事故財富為 0 ($u = \\ln 0 = -\\infty$)。\n保單 I (保費 10，給付 20)；保單 II (保費 70，給付 35)。\n1. 計算期望效用 $EU = (1-p)\\ln(100 - \\text{保費}) + p\\ln(\\text{給付})$：\n   - Cautious 選擇：\n     $EU_C(\\text{保單 I}) = \\frac{2}{3}\\ln(90) + \\frac{1}{3}\\ln(20) \\approx 3.9986$。\n     $EU_C(\\text{保單 II}) = \\frac{2}{3}\\ln(30) + \\frac{1}{3}\\ln(35) \\approx 3.452$。\n     故 C 型選擇保單 I（選項 C 正確）。\n   - Reckless 選擇：\n     $EU_R(\\text{保單 I}) = \\frac{1}{3}\\ln(90) + \\frac{2}{3}\\ln(20) \\approx 3.497$。\n     $EU_R(\\text{保單 II}) = \\frac{1}{3}\\ln(30) + \\frac{2}{3}\\ln(35) \\approx 3.504$。\n     故 R 型選擇保單 II（選項 D 正確）。\n2. 選項 A 正確：兩型駕駛皆自願購買適合之保單。\n3. 選項 B 錯誤：保險公司利潤：\n   - 對 C 型期望利潤：$10 - \\frac{1}{3}(20) = 3.33 > 0$。\n   - 對 R 型期望利潤：$70 - \\frac{2}{3}(35) = 46.67 > 0$。\n   總利潤為正，不會產生赤字（run a deficit）。\n\n故選 A, C, D。"
   },
   {
     "id": "NTPU_113_MICRO_Q09",
@@ -377,8 +377,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "E",
+    "explanation": "【研發投資外部性與 Nash 平衡推導】\n利潤函數：\n$\\pi_A = 5 \\ln(g_A + g_B + 1) - g_A$\n$\\pi_B = 5 \\ln(g_A + g_B + g_C + 1) - g_B$\n$\\pi_C = 5 \\ln(g_B + g_C + 1) - g_C$\n\n1. 一階極大化條件（FOC）：\n   - $\\frac{\\partial \\pi_A}{\\partial g_A} = \\frac{5}{g_A + g_B + 1} - 1 = 0 \\implies g_A + g_B = 4$\n   - $\\frac{\\partial \\pi_B}{\\partial g_B} = \\frac{5}{g_A + g_B + g_C + 1} - 1 = 0 \\implies g_A + g_B + g_C = 4$\n   - $\\frac{\\partial \\pi_C}{\\partial g_C} = \\frac{5}{g_B + g_C + 1} - 1 = 0 \\implies g_B + g_C = 4$\n2. 解 Nash 平衡：\n   由前兩式可知 $g_C = 0$；由第三式可知 $g_B = 4$；進而解得 $g_A = 0$。\n   故存在唯一的純策略 Nash 平衡 $(g_A, g_B, g_C) = (0, 4, 0)$。選項 A, B 錯誤。\n3. 社會最適與外部性：\n   研發投資具備正外部性（溢出效果），私人 Nash 平衡忽視了對其他廠商的效益，導致總投資量低於社會最適水準，故 Nash 平衡並非社會最適（socially optimal）。選項 C, D 錯誤。\n\n故選項 A, B, C, D 皆不正確，選 E (None of the above)。"
   },
   {
     "id": "NTPU_113_MICRO_Q10",
@@ -421,8 +421,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "B, D",
+    "explanation": "【Cournot 寡佔均衡計算】\n需求 $p = 18 - 2(q_A + q_B)$，$C_A(q_A) = 2q_A$，$C_B(q_B) = q_B$。\n1. 反應函數推導：\n   - 廠商 A: $\\pi_A = (16 - 2q_A - 2q_B)q_A \\implies \\frac{d\\pi_A}{dq_A} = 16 - 4q_A - 2q_B = 0 \\implies q_A = 4 - 0.5q_B$。\n   - 廠商 B: $\\pi_B = (17 - 2q_A - 2q_B)q_B \\implies \\frac{d\\pi_B}{dq_B} = 17 - 2q_A - 4q_B = 0 \\implies q_B = 4.25 - 0.5q_A$。\n2. 均衡產量與價格：\n   聯立解得 $q_A = 2.5, q_B = 3$。總產量 $Q = 5.5$，均衡價格 $p = 18 - 2(5.5) = 7$。\n3. 生產者剩餘（PS）：\n   $PS_A = (7 - 2) \\times 2.5 = 12.5$。\n   $PS_B = (7 - 1) \\times 3 = 18$。\n   $PS_B > PS_A$，故選項 B 正確，A 錯誤。\n4. 消費者剩餘（CS）：\n   $CS = \\frac{1}{2} \\times (18 - 7) \\times 5.5 = 30.25 < 50$，故選項 D 正確，C 錯誤。\n5. 社會剩餘極大化：因價格高於邊際成本，存在 deadweight loss，社會剩餘未極大化，選項 E 錯誤。\n\n故選 B, D。"
   },
   {
     "id": "NTPU_113_MICRO_Q11",
@@ -461,8 +461,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "B, C",
+    "explanation": "【混合寡佔（公營與民營） Cournot 均衡】\n國營廠商 A 目標：$V_A = PS_A + CS$；民營廠商 B 目標：$\\pi_B = PS_B$。\n1. 目標函數極大化：\n   - $CS = \\frac{1}{2}(18 - p)Q = Q^2 = (q_A + q_B)^2$。\n   - $PS_A = (16 - 2q_A - 2q_B)q_A$。\n   - $V_A = (16 - 2q_A - 2q_B)q_A + (q_A + q_B)^2 = 16q_A - q_A^2 + q_B^2$。\n   - 國營 A 一階條件：$\\frac{\\partial V_A}{\\partial q_A} = 16 - 2q_A = 0 \\implies q_A = 8$。\n2. 廠商 B 反應：\n   將 $q_A = 8$ 帶入 B 的反應函數 $17 - 2(8) - 4q_B = 0 \\implies 4q_B = 1 \\implies q_B = 0.25$。\n3. 均衡結果分析：\n   - 總產量 $Q = 8 + 0.25 = 8.25$。\n   - 均衡價格 $p = 18 - 2(8.25) = 1.5 < 5$（選項 B 正確，A 錯誤）。\n   - 消費者剩餘 $CS = Q^2 = (8.25)^2 = 68.0625 > 50$（選項 C 正確，D 錯誤）。\n   - 社會剩餘：由於高成本的 A 生產了絕大部分產量，且價格 $p=1.5 > MC_B=1$，生產配置不具效率，未達成社會剩餘極大化（選項 E 錯誤）。\n\n故選 B, C。"
   },
   {
     "id": "NTPU_113_MICRO_Q12",
@@ -503,8 +503,8 @@
       }
     ],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "B, D",
+    "explanation": "【互補獨佔與雙重邊際化 (Double Marginalization) 分析】\n需求 $q = 120 - 4p$，票價 $p = p_1 + p_2$。成本為 0。\n1. 情境 II（單一獨佔者 Single Monopolist）：\n   $\\pi = p(120 - 4p) = 120p - 4p^2 \\implies \\frac{d\\pi}{dp} = 120 - 8p = 0 \\implies p_{II} = 15$。\n   產量 $q_{II} = 60$，消費者剩餘 $CS_{II} = \\frac{1}{2}(30 - 15) \\times 60 = 450$。\n2. 情境 I（雙重互補獨佔 Two Competing Monopolists）：\n   廠商 1 極大化 $\\pi_1 = p_1[120 - 4(p_1 + p_2)] \\implies 120 - 8p_1 - 4p_2 = 0 \\implies 2p_1 + p_2 = 30$。\n   對稱解得 $p_1 = p_2 = 10 \\implies$ 總票價 $p_I = 20$。\n   產量 $q_I = 40$，消費者剩餘 $CS_I = \\frac{1}{2}(30 - 20) \\times 40 = 200$。\n3. 比較：\n   - 總票價 $p_{II} (15) < p_I (20)$（情境 II 票價嚴格較低，選項 D 正確，C 錯誤）。\n   - 消費者剩餘 $CS_{II} (450) > CS_I (200)$（情境 II 消費者福利嚴格較佳，選項 B 正確，A 錯誤）。\n\n故選 B, D。"
   },
   {
     "id": "NTPU_114_MICRO_Q01",
@@ -533,8 +533,8 @@
         "text": "Find the mixed strategy equilibrium."
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) 0 個；(b) 雙方皆以 (1/3, 1/3, 1/3) 隨機出拳",
+    "explanation": "【博弈理論分析】\n(a) 剪刀石頭布為經典對稱零和博弈。對於任何純策略組合，輸家皆有偏離至能克制贏家策略的誘因，故不存在任何純策略納許均衡（Pure Strategy Nash Equilibrium 個數為 0）。\n\n(b) 設玩家 1 出 (Rock, Paper, Scissors) 的機率為 $(p_1, p_2, p_3)$，玩家 2 機率為 $(q_1, q_2, q_3)$。\n由對稱性與無差別條件（Indifference Condition），玩家 1 選擇任一純策略所得之期望報酬需相等：\n$$E[\text{Rock}] = q_3 - q_2 = E[\text{Paper}] = q_1 - q_3 = E[\text{Scissors}] = q_2 - q_1$$\n結合機率和 $q_1 + q_2 + q_3 = 1$，解得混合策略納許均衡（Mixed Strategy Nash Equilibrium）：\n$$(p_R^*, p_P^*, p_S^*) = (1/3, 1/3, 1/3), \\quad (q_R^*, q_P^*, q_S^*) = (1/3, 1/3, 1/3)$$\n此時雙方之期望報酬皆為 0。"
   },
   {
     "id": "NTPU_114_MICRO_Q02",
@@ -565,8 +565,8 @@
         "text": "Suppose the two firms form a cartel and evenly share profits. Find the market equilibrium price and each firm's output."
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) P = 65.22, q1 = 21.74, q2 = 13.04; (b) P = 70, q1 = 20, q2 = 10, 每家利潤 750",
+    "explanation": "【寡佔市場推導】\n需求 $P = 100 - (q_1 + q_2)$，成本 $C_1(q_1) = q_1^2$, $C_2(q_2) = 2q_2^2$。\n\n(a) Cournot 競賽：\n- 廠商 1 極大化 $\\pi_1 = (100 - q_1 - q_2)q_1 - q_1^2 \\implies \\frac{\\partial \\pi_1}{\\partial q_1} = 100 - 4q_1 - q_2 = 0 \\implies 4q_1 + q_2 = 100$。\n- 廠商 2 極大化 $\\pi_2 = (100 - q_1 - q_2)q_2 - 2q_2^2 \\implies \\frac{\\partial \\pi_2}{\\partial q_2} = 100 - q_1 - 6q_2 = 0 \\implies q_1 + 6q_2 = 100$。\n聯立求解：\n$q_1 = 500/23 \\approx 21.74$, $q_2 = 300/23 \\approx 13.04$。\n總產量 $Q = 800/23 \\approx 34.78$，均衡價格 $P = 100 - 34.78 = 65.22$。\n\n(b) Cartel 勾結：\n極小化總成本要求兩廠邊際成本相等：$MC_1 = MC_2 \\implies 2q_1 = 4q_2 \\implies q_1 = 2q_2$。\n極大化總利潤 $\\pi_{total} = (100 - 3q_2)(3q_2) - (2q_2)^2 - 2(q_2)^2 = 300q_2 - 15q_2^2$。\n一階條件：$300 - 30q_2 = 0 \\implies q_2 = 10 \\implies q_1 = 20$。\n總產量 $Q = 30$，市場價格 $P = 100 - 30 = 70$。\n總利潤 $\\pi = 70(30) - 20^2 - 2(10^2) = 2100 - 600 = 1500$。平分後每家獲利 750。"
   },
   {
     "id": "NTPU_114_MICRO_Q03",
@@ -598,8 +598,8 @@
         "text": "Suppose, in the long run, all production factors are variable. Find the long-run cost function C_{LR}(y)."
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) L*(y, K_bar) = max{0, y - 10K_bar}, C_SR = w * max{0, y - 10K_bar} + r K_bar; (b) C_LR(y) = min{w, r/10} * y",
+    "explanation": "【短期與長期成本函數推導】\n生產函數 $y = L + 10K$（完全替代生產函數）。\n\n(a) 短期成本（$K = \\bar{K}$）：\n產量需求 $y = L + 10\\bar{K}$。\n若 $y \\le 10\\bar{K}$，資本即足夠滿足生產，$L^* = 0$；\n若 $y > 10\\bar{K}$，額外產量需由勞動提供，故條件勞動需求為：\n$$L^*(y, \\bar{K}) = \\max\\{0, y - 10\\bar{K}\\}$$\n短期成本函數：\n$$C_{SR}(y, \\bar{K}) = w \\cdot \\max\\{0, y - 10\\bar{K}\\} + r \\bar{K}$$\n\n(b) 長期成本（所有要素可變）：\n完全替代生產函數下，廠商將完全使用單位產量成本較低之要素。\n- 單位產量使用勞動之成本：$\\frac{w}{MP_L} = w$\n- 單位產量使用資本之成本：$\\frac{r}{MP_K} = \\frac{r}{10}$\n長期總成本函數：\n$$C_{LR}(y) = \\min\\left\\{w, \\frac{r}{10}\\right\\} \\cdot y$$"
   },
   {
     "id": "NTPU_114_MICRO_Q04",
@@ -642,8 +642,8 @@
         "text": "Now consider a separating equilibrium with graduate degree signaling. Find the ranges of c_i^U, c_i^G for each type."
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) w* = 7.5; (b) w^U = 9, w^N = 3; (c) c_H^U <= 6, c_M^U <= 6, c_L^U >= 6; (d) [6, 15]; (e) c_H^G <= 6, c_M^G >= 6",
+    "explanation": "【資訊不對稱與勞動市場訊號模型】\n生產力：$\\pi_H = 15, \\pi_M = 6, \\pi_L = 3$，人數比例 $1/4, 1/2, 1/4$。\n\n(a) 完全無訊號（完全混同均衡）：\n雇主支付期望生產力工資：\n$$w^* = \\frac{1}{4}(15) + \\frac{1}{2}(6) + \\frac{1}{4}(3) = 3.75 + 3 + 0.75 = 7.5$$\n\n(b) 部分分離均衡工資：\n雇主相信取得大學學歷（U）者為 H 或 M，無學歷（N）者為 L：\n$$w^U = E[\\pi | H, M] = \\frac{\\frac{1}{4}(15) + \\frac{1}{2}(6)}{\\frac{1}{4} + \\frac{1}{2}} = \\frac{3.75 + 3}{0.75} = 9$$\n$$w^N = \\pi_L = 3$$\n\n(c)與(d) 支撐該均衡之學歷成本條件：\n- H 型與 M 型選擇取得大學學歷：$w^U - c_i^U \\ge w^N \\implies 9 - c_i^U \\ge 3 \\implies c_H^U \\le 6$ 且 $c_M^U \\le 6$。\n- L 型選擇不取得大學學歷：$w^U - c_L^U \\le w^N \\implies 9 - c_L^U \\le 3 \\implies c_L^U \\ge 6$。\n\n(e) 碩士學歷完全分離均衡：\n工資分別為 $w^G = 15, w^U = 6, w^N = 3$。\n激勵相容條件要求 $c_H^G \\le 15 - 9 = 6$，且 $c_M^G \\ge 15 - 6 = 9$。"
   },
   {
     "id": "NTPU_114_MICRO_Q05",
@@ -685,8 +685,8 @@
         "text": "Show that Ann's Engel curve is a straight line and derive its slope."
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) x1* = M/[4(1+k)], x2* = kM/[5(1+k)]; (b) 1; (c) 不變（支出固定為 kM/(1+k)）; (d) 改變（x1* 增加一倍，x2* 不變）; (e) 直線 M = 4(1+k) x1，斜率 4(1+k)",
+    "explanation": "【Cobb-Douglas 需求函數與彈性分析】\n效用函數 $U(x_1, x_2) = x_1 x_2^k$，$P_1 = 4, P_2 = 5$，所得 $M$。\n\n(a) 最優消費組合：\n由 Cobb-Douglas 支出比例性質：\n$$x_1^* = \\frac{1}{1+k} \\frac{M}{P_1} = \\frac{M}{4(1+k)}$$\n$$x_2^* = \\frac{k}{1+k} \\frac{M}{P_2} = \\frac{k M}{5(1+k)}$$\n\n(b) $x_1$ 之所得彈性：\n$$E_{x1, M} = \\frac{\\partial x_1^*}{\\partial M} \\cdot \\frac{M}{x_1^*} = \\frac{1}{4(1+k)} \\cdot \\frac{M}{\\frac{M}{4(1+k)}} = 1$$\n\n(c) $P_2$ 由 5 升至 10 對 $x_2$ 費用的影響：\n對 $x_2$ 之總支出為 $P_2 x_2^* = \\frac{k M}{1+k}$，完全與 $P_2$ 無關。故 Ann 不會改變對財貨 2 的總支出。\n\n(d) $P_1$ 由 4 降至 2 對最佳消費組合的影響：\n會改變！$x_1^*$ 由 $\\frac{M}{4(1+k)}$ 增加一倍至 $\\frac{M}{2(1+k)}$；$x_2^*$ 保持不變。\n\n(e) 恩格爾曲線（Engel Curve）：\n將 $M$ 表為 $x_1^*$ 之函數：$M = 4(1+k) x_1$。此為過原點之直線，斜率為 $4(1+k)$。"
   },
   {
     "id": "NTPU_114_MICRO_Q06",
@@ -715,8 +715,8 @@
         "text": "Is Dick risk-averse? Explain your reasoning."
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) 會購買保險（EU_Ins = 19.235 > EU_No = 19.0）; (b) 是（效用函數為嚴格凹函數）",
+    "explanation": "【期望效用與風險態度分析】\n初始財富 $W=400$，損失 175（概率 20%），保費 30（全額給付），$U(W) = \\sqrt{W}$。\n\n(a) 保險決策計算：\n- 不購買保險之期望效用：\n  $$EU_{No} = 0.8 \\sqrt{400} + 0.2 \\sqrt{400 - 175} = 0.8(20) + 0.2 \\sqrt{225} = 16 + 0.2(15) = 19.0$$\n- 購買保險之期望效用：\n  確定財富 $W_{Ins} = 400 - 30 = 370$\n  $$EU_{Ins} = \\sqrt{370} \\approx 19.235$$\n因為 $EU_{Ins} (19.235) > EU_{No} (19.0)$，故 Dick 會選擇購買保險。\n\n(b) 風險態度分析：\nDick 為風險趨避者（Risk-Averse）。\n原因：其效用函數邊際效用遞減 $U'(W) = 0.5 W^{-0.5} > 0$，二階導數 $U''(W) = -0.25 W^{-1.5} < 0$，效用函數為嚴格凹函數（strictly concave），滿足風險趨避定義。"
   },
   {
     "id": "NTPU_114_MICRO_Q07",
@@ -746,8 +746,8 @@
         "text": "Is the Walrasian equilibrium Pareto efficient? Why or why not? Explain your reasoning."
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) Px/Py = 1, (xA*, yA*) = (2/3, 4/3), (xB*, yB*) = (4/3, 2/3); (b) 是（符合福利經濟學第一定理與 MRS_A = MRS_B 條件）",
+    "explanation": "【瓦爾拉斯一般均衡推導】\n$U_A = x_A y_A^2, \\omega_A = (2, 0)$；$U_B = x_B^2 y_B, \\omega_B = (0, 2)$。\n令 $P_y = 1, P_x = p$。\n\n(a) 瓦爾拉斯均衡求解：\n- 消費者 A 所得 $I_A = 2p$。由 Cobb-Douglas 需求：\n  $$x_A^* = \\frac{1}{3} \\frac{2p}{p} = \\frac{2}{3}, \\quad y_A^* = \\frac{2}{3} \\frac{2p}{1} = \\frac{4p}{3}$$\n- 消費者 B 所得 $I_B = 2$。由 Cobb-Douglas 需求：\n  $$x_B^* = \\frac{2}{3} \\frac{2}{p} = \\frac{4}{3p}, \\quad y_B^* = \\frac{1}{3} \\frac{2}{1} = \\frac{2}{3}$$\n- 市場結清條件：\n  $$x_A^* + x_B^* = 2 \\implies \\frac{2}{3} + \\frac{4}{3p} = 2 \\implies \\frac{4}{3p} = \\frac{4}{3} \\implies p = 1$$\n均衡價格比 $P_x/P_y = 1$，均衡分配為 $(x_A^*, y_A^*) = (2/3, 4/3)$，$(x_B^*, y_B^*) = (4/3, 2/3)$。\n\n(b) Pareto 效率分析：\n是，該瓦爾拉斯均衡為 Pareto 效率點。\n原因：根據福利經濟學第一定理，在完全競爭且無外部性市場下，瓦爾拉斯均衡分配必為 Pareto 效率點。\n具體檢驗邊際替代率：\n$$MRS_A = \\frac{y_A}{2x_A} = \\frac{4/3}{2(2/3)} = 1, \\quad MRS_B = \\frac{2y_B}{x_B} = \\frac{2(2/3)}{4/3} = 1$$\n$MRS_A = MRS_B = P_x/P_y = 1$，符合 Pareto 效率之邊際條件。"
   },
   {
     "id": "NTPU_115_MICRO_Q01",
@@ -790,8 +790,8 @@
         "text": "Let p_2 = 1. Suppose p_1 changes from 1/2 to 2. Find the equivalent variation and the compensating variation."
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) True; (b) False; (c) True; (d) p1<p2: (m/p1, 0), p1>p2: (0, m/p2); (e) EV = m/2, CV = m",
+    "explanation": "【絕對值效用函數與福利變動推導】\n效用函數 $U(x_1, x_2) = |x_1 - x_2|$。\n\n(a) 傳遞性 (Transitive): **True**。偏好關係由實數大於等於關係 $\\ge$ 定義，實數列具傳遞性，故偏好關係亦具備傳遞性。\n(b) 凸性 (Convex): **False**。取 $A=(4,0)$（效用 4）與 $B=(0,4)$（效用 4），凸組合 $C=(2,2)$ 效用為 $|2-2|=0 < 4$，說明偏好為嚴格非凸（凹性效用/偏好極端值）。\n(c) 齊次性 (Homothetic): **True**。對任意 $\\alpha > 0$，$U(\\alpha x_1, \\alpha x_2) = |\\alpha x_1 - \\alpha x_2| = \\alpha |x_1 - x_2| = \\alpha U(x_1, x_2)$，無異曲線形狀在放射線上比例不變。\n\n(d) 需求函數 $x_1(p_1, p_2, m), x_2(p_1, p_2, m)$：\n因無異曲線向外凹，最佳選擇必為邊角解：\n- 全買 $x_1$ 效用為 $m/p_1$；全買 $x_2$ 效用為 $m/p_2$。\n- 若 $p_1 < p_2 \\implies (x_1^*, x_2^*) = (m/p_1, 0)$。\n- 若 $p_1 > p_2 \\implies (x_1^*, x_2^*) = (0, m/p_2)$。\n- 若 $p_1 = p_2 \\implies (m/p_1, 0)$ 或 $(0, m/p_2)$ 皆可。\n\n(e) 等價變動 (EV) 與補償變動 (CV)：\n$p_2 = 1$，$p_1$ 由 $1/2$ 升至 $2$。\n- 初始狀態 0（$p_1=1/2$）：全買 $x_1$，效用 $u_0 = 2m$。\n- 新狀態 1（$p_1=2$）：全買 $x_2$，效用 $u_1 = m$。\n- **等價變動 (EV)**：在舊價格（$p_1=1/2$）下達新效用 $u_1 = m$ 所需所得為 $m/2$，故 $EV = m - m/2 = m/2$。\n- **補償變動 (CV)**：在新價格（$p_1=2$）下達舊效用 $u_0 = 2m$（全買 $x_2$）所需所得為 $2m$，故 $CV = 2m - m = m$。"
   },
   {
     "id": "NTPU_115_MICRO_Q02",
@@ -823,8 +823,8 @@
         "text": "Fix B_L^* = 9, and make B_J^* variable. Express the passed bill under the SPNE as the function of the Judiciary's preference B(B_J^*)."
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) B_SPNE = 6; (b) B(B_J*) = min{9, 2*B_J*}",
+    "explanation": "【立法與司法博弈分析】\n政策空間 $\\mathcal{B} = [0, 10]$，現狀 $B_0 = 0$。$B_L^* = 9, B_J^* = 3$。報酬 $\\pi_i = -|B_i^* - B|$。\n\n(a) 子賽局精確納許均衡（SPNE）：\n- 司法者不否決（否決得 $\\pi_J(0) = -3$）之可接受條件：\n  $$\\pi_J(B) \\ge -3 \\implies -|3 - B| \\ge -3 \\implies |3 - B| \\le 3 \\implies 0 \\le B \\le 6$$\n- 立法者極大化其報酬 $\\pi_L(B) = -|9 - B|$，在约束 $0 \\le B \\le 6$ 下，選擇最靠近 9 之上限 $B_{SPNE} = 6$。\n\n(b) 司法者偏好 $B_J^*$ 為變數時：\n- 司法者可接受區間為 $0 \\le B \\le 2B_J^*$。\n- 立法者目標最優解為 $B(B_J^*) = \\min\\{9, 2B_J^*\\}$。"
   },
   {
     "id": "NTPU_115_MICRO_Q03",
@@ -874,8 +874,8 @@
         "text": "Find the social welfare under collusion."
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) q_O* = q_G* = 30 + x_O + x_G; (b) pi_i = (30 + x_O + x_G)^2 / 3 - 2 x_i^2; (c) x_i = 6 + 0.2 x_j; (d) x_O* = x_G* = 7.5; (e) SW = 6037.5; (f) x_collude = 15; (g) SW_collude = 7200",
+    "explanation": "【兩階段研發與產量競賽】\n成本 $C_i = (70 - (x_i + x_j))q_i + 2x_i^2$，需求 $P = 100 - \\frac{1}{3}Q$。\n\n(a) 第二階段 Cournot 均衡：\n單位變動成本 $c = 70 - (x_O + x_G)$。反應函數對稱解得：\n$$q_O^* = q_G^* = 30 + x_O + x_G$$\n\n(b) 淨利潤函數：\n$P - c = \\frac{1}{3}(30 + x_O + x_G)$。經營利潤 $(P-c)q_i = \\frac{1}{3}(30 + x_O + x_G)^2$。\n$$\\pi_i(x_O, x_G) = \\frac{1}{3}(30 + x_O + x_G)^2 - 2x_i^2$$\n\n(c) 第一階段 R&D 反應函數：\n$$\\frac{\\partial \\pi_i}{\\partial x_i} = \\frac{2}{3}(30 + x_O + x_G) - 4x_i = 0 \\implies 20 + \\frac{2}{3}x_j - \\frac{10}{3}x_i = 0 \\implies x_i = 6 + \\frac{1}{5}x_j$$\n\n(d) R&D 均衡投入量：\n對稱解 $x_O^* = x_G^* = 7.5$。\n\n(e) 社會福利 SW：\n產量 $q^* = 45 \\implies Q^* = 90, P = 70$。$CS = \\frac{1}{2}(30)(90) = 1350$；總利潤 $\\pi_{total} = 2 [\\frac{1}{3}(45)^2 - 2(7.5)^2] = 2[675 - 112.5] = 1125$。$SW = CS + \\pi_{total} = 2475$。\n\n(f) 第一階段 R&D 勾結（Collusion）：\n兩廠商合作極大化總利潤 $\\Pi = \\frac{2}{3}(30 + 2x)^2 - 4x^2$。\n一階條件：$\\frac{8}{3}(30 + 2x) - 8x = 0 \\implies 80 + \\frac{16}{3}x - 8x = 0 \\implies \\frac{8}{3}x = 80 \\implies x_{collude} = 30$。"
   },
   {
     "id": "NTPU_115_MICRO_Q04",
@@ -905,8 +905,8 @@
         "text": "Compare the optimal capital input under uncertainty with the risk-neutral benchmark case. Is the optimal capital choice higher or lower? Explain. (10%)"
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) k* 滿足 (p/sqrt(k) - r)/(2p sqrt(k) - r k) + (0.5p/sqrt(k) - r)/(p sqrt(k) - r k) = 0; (b) 避險 CEO 之 k* 嚴格小於風險中立基準 k_RN",
+    "explanation": "【不確定性下委託代理與資本選擇】\nCEO 報酬 $W = \\lambda (p \\theta \\sqrt{k} - r k)$，效用 $U(W) = \\ln W = \\ln \\lambda + \\ln(p \\theta \\sqrt{k} - r k)$。\n\n(a) CEO 資本選擇 $k^*$：\n極大化期望效用：\n$$E[U] = \\frac{1}{2} \\ln(2p \\sqrt{k} - r k) + \\frac{1}{2} \\ln(p \\sqrt{k} - r k)$$\n一階極大化條件（以 $z = \\sqrt{k}$ 表示）：\n$$\\frac{\\partial E[U]}{\\partial k} = \\frac{1}{2} \\frac{\\frac{p}{\\sqrt{k}} - r}{2p \\sqrt{k} - r k} + \\frac{1}{2} \\frac{\\frac{0.5p}{\\sqrt{k}} - r}{p \\sqrt{k} - r k} = 0$$\n\n(b) 與風險中立（Risk-Neutral Benchmark）比較：\n- 風險中立基準極大化期望利潤 $E[\\pi] = 1.5 p \\sqrt{k} - r k \\implies \\sqrt{k_{RN}} = \\frac{0.75 p}{r}$。\n- 比較結論：$k^* < k_{RN}$（風險趨避 CEO 之資本投入較小）。\n- 原因：CEO 的效用函數為對數凹函數（對數風險趨避），資本規模 $k$ 擴大會同時放大極大好狀態與壞狀態間的波動風險。為避免壞狀態下的極低回報，風險趨避者會自願縮減資本投入規模以降低風險曝險。"
   },
   {
     "id": "NTPU_115_MICRO_Q05",
@@ -929,8 +929,8 @@
     ],
     "options": [],
     "subquestions": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "p* = a - b (a - t)/(2b + c + gamma*d)；ECSR 程度 gamma 增加使均衡價格 p* 上升",
+    "explanation": "【企業社會責任 (ECSR) 與碳稅政策分析】\n需求 $p(Q) = a - b Q$，成本 $C(Q) = \\frac{c}{2} Q^2$，損害 $D(Q) = \\frac{d}{2} Q^2$，碳稅 $t$。\n\n1. ECSR 廠商極大化目標：\n廠商主動內部化 $\\gamma$ 比例之環境損害：\n$$\\pi_{ECSR} = (a - b Q) Q - \\frac{c}{2} Q^2 - t Q - \\gamma \\frac{d}{2} Q^2$$\n2. 均衡產量 $Q^*$ 推導：\n一階條件：\n$$\\frac{d\\pi}{dQ} = a - 2b Q - c Q - t - \\gamma d Q = 0 \\implies Q^* = \\frac{a - t}{2b + c + \\gamma d}$$\n3. 均衡價格 $p^*$ 與 $\\gamma$ 比較靜態：\n$$p^* = a - b Q^* = a - b \\frac{a - t}{2b + c + \\gamma d}$$\n對 $\\gamma$ 求偏導數：\n$$\\frac{\\partial p^*}{\\partial \\gamma} = \\frac{b (a - t) d}{(2b + c + \\gamma d)^2} > 0$$\n結論：ECSR 重視程度 $\\gamma$ 提高會使均衡價格 $p^*$ 上升。\n經濟意涵：廠商承擔越多環境社會責任，相當於自主提高邊際生產成本，促使產量縮減，進而推升市場均衡價格。"
   },
   {
     "id": "NTPU_115_MICRO_Q06",
@@ -962,7 +962,7 @@
         "text": "Now suppose production of good X involves a factor-use externality (e.g., the output of X depends on an aggregate factor use term). Explain how the competitive equilibrium deviates from efficiency. (8%)"
       }
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "(a) 競爭要素市場下 MRTS_X = w/r = MRTS_Y，滿足 Edgeworth Box 契約曲線；(b) 廠商忽略社會外部效益，導致 MRTS_private != MRTS_social，偏離 Pareto 最適配置",
+    "explanation": "【一般均衡生產效率與外部性失靈】\n兩財貨 $X, Y$，兩要素 $L, K$。\n\n(a) 競爭均衡滿足生產效率證明：\n在完全競爭要素市場中，產業 X 與產業 Y 面臨相同之要素價格（工資 $w$ 與租金 $r$）。\n兩產業成本極小化條件要求邊際技術替代率（MRTS）皆等於要素價格比：\n$$MRTS_{L,K}^X = \\frac{w}{r} = MRTS_{L,K}^Y$$\n兩產業之邊際技術替代率相等為生產埃奇沃斯盒（Edgeworth Box）中契約曲線的充要條件，故競爭均衡必達生產效率。\n\n(b) 要素使用外部性之偏離分析：\n若 X 產業存在要素使用外部性，廠商決策僅考慮私人邊際產量（Private Marginal Product），而忽視外部性所創造之社會邊際產量（Social Marginal Product）。\n導致私人生產決策之 $MRTS_{private}^X \\ne MRTS_{social}^X$。要素市場價格無法完全傳遞真正的社會機會成本，使得 $MRTS_X \\ne MRTS_Y$，生產分配點偏離生產可能性曲線（PPC）或位於非社會最適點，產生市場失靈（Market Failure）。"
   }
 ]

@@ -153,6 +153,8 @@ def import_questions(json_path: Path):
                 question.question_type = q_type
                 question.content = content
                 question.options = options_json
+                question.answer = item.get("answer") or None
+                question.explanation = item.get("explanation") or None
                 question.tags = tags_str
                 question.points = points
                 question.difficulty = diff

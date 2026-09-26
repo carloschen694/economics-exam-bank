@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歷屆經濟學研究所題庫網頁驗收系統</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <style>
+        body { background-color: #f8f9fa; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        .header-bg { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 2.5rem 0; margin-bottom: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .card { border-radius: 12px; border: none; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 1.5rem; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .badge-year { background-color: #0d6efd; color: white; }
+        .badge-type { background-color: #6c757d; color: white; }
+        .badge-tag { background-color: #e9ecef; color: #495057; border: 1px solid #ced4da; margin-right: 4px; }
+        .explanation-box { background-color: #f1f8ff; border-left: 4px solid #0366d6; padding: 1.25rem; margin-top: 1rem; border-radius: 6px; font-size: 0.98rem; }
+        .option-item { background: #fff; border: 1px solid #e9ecef; padding: 8px 12px; margin-bottom: 6px; border-radius: 6px; }
+        .katex-display { margin: 0.75rem 0; overflow-x: auto; overflow-y: hidden; }
+    </style>
+</head>
+<body>
+
+<div class="header-bg">
+    <div class="container">
+        <h1 class="fw-bold">🎓 歷屆經濟學研究所題庫驗收系統</h1>
+        <p class="lead mb-0">國立臺北大學 113～115 學年度個體經濟學考題，線上互動驗收與 Markdown / KaTeX 數學解析查詢</p>
+    </div>
+</div>
+
+<div class="container">
+    <!-- 搜尋與篩選列 -->
+    <div class="card p-4 mb-4">
+        <div class="row g-3">
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">📅 民國年份</label>
+                <select id="filterYear" class="form-select" onchange="fetchQuestions()">
+                    <option value="">全部年份 (113~115年)</option>
+                    <option value="113">113 學年度 (12題複選)</option>
+                    <option value="114">114 學年度 (7題計算)</option>
+                    <option value="115">115 學年度 (6題計算)</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">📝 題型類別</label>
+                <select id="filterType" class="form-select" onchange="fetchQuestions()">
+                    <option value="">全部題型</option>
+                    <option value="multiple_choice">複選題</option>
+                    <option value="calculation">計算申論題</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label fw-semibold">🔍 關鍵字搜尋 (包含內文/答案/解析)</label>
+                <input type="text" id="filterKeyword" class="form-control" placeholder="輸入關鍵字如：Cournot, 效用, 保險, Nash..." onkeyup="if(event.key==='Enter') fetchQuestions()">
+            </div>
+            <div class="col-md-2 d-flex align-items-end gap-2">
+                <button class="btn btn-primary w-100 fw-bold" onclick="fetchQuestions()">搜尋</button>
+                <button class="btn btn-outline-secondary" onclick="resetFilters()" title="重置搜尋條件">重置</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 統計數量顯示 -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="fw-bold text-secondary" id="resultSummary">載入中...</h5>
+        <span class="badge bg-success fs-6">資料庫狀態：已支援 Markdown & KaTeX 數學美化</span>
+    </div>
+
+    <!-- 題目列表容器 -->
+    <div id="questionsContainer"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- 引入 marked.js 解析 Markdown -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<!-- 引入 KaTeX 及 Auto-Render 腳本 -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+<script>
+    async function fetchQuestions() {
+        const year = document.getElementById('filterYear').value;
+        const type = document.getElementById('filterType').value;
+        const keyword = document.getElementById('filterKeyword').value;
+
+        let url = '/api/v1/questions?limit=100';
+        if (year) url += `&year=${year}`;
+        if (type) url += `&question_type=${encodeURIComponent(type)}`;
+        if (keyword) url += `&keyword=${encodeURIComponent(keyword)}`;
+
+        const container = document.getElementById('questionsContainer');
+        container.innerHTML = '<div class="text-center py-5"><div class="spinner-border text-primary"></div><p class="mt-2 text-muted">題庫資料載入中...</p></div>';
+
+        try {
+            const res = await fetch(url);
+            const data = await res.json();
+
+            document.getElementById('resultSummary').innerText = `共查詢到 ${data.length} 筆考題紀錄：`;
+
+            if (data.length === 0) {
+                container.innerHTML = `
+                <div class="alert alert-warning text-center p-4">
+                    <h5>🔍 查無符合多重篩選條件的題目</h5>
+                    <p class="mb-3 text-muted">提示：例如「Nash」相關考題位於 <strong>114 年</strong>與 <strong>115 年</strong>（計算申論題），若同時選擇 113 年將無法匹配。</p>
+                    <button class="btn btn-outline-primary btn-sm fw-bold" onclick="resetFilters()">切換為「全部年份」並搜尋</button>
+                </div>`;
+                return;
+            }
+
+            container.innerHTML = data.map((q, idx) => {
+                let optionsHtml = '';
+                if (q.options) {
+                    try {
+                        const opts = JSON.parse(q.options);
+                        optionsHtml = '<div class="mt-3"><strong>【選擇題選項】</strong>';
+                        for (const [k, v] of Object.entries(opts)) {
+                            optionsHtml += `<div class="option-item"><strong>(${k})</strong> ${escapeHtml(v)}</div>`;
+                        }
+                        optionsHtml += '</div>';
+                    } catch (e) {}
+                }
+
+                const tagsHtml = (q.tags || '').split(',').map(t => `<span class="badge badge-tag">${t.trim()}</span>`).join('');
+
+                const parsedExplanation = q.explanation ? marked.parse(q.explanation) : '<em>(暫無詳細解析)</em>';
+
+                return `
+                <div class="card p-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <span class="badge badge-year me-1">${q.year || '113'}年</span>
+                            <span class="badge badge-type me-2">${q.question_type === 'multiple_choice' ? '複選題' : '計算申論題'}</span>
+                            <span class="fw-bold fs-5 me-2">第 ${q.question_number} 題</span>
+                            <span class="text-muted">(${q.points || 10} 分)</span>
+                        </div>
+                        <div>
+                            <span class="text-warning">★</span> 難度: ${q.difficulty}/5
+                        </div>
+                    </div>
+
+                    <div class="my-2">${tagsHtml}</div>
+
+                    <div class="mt-3 fs-6" style="white-space: pre-line;">${escapeHtml(q.content)}</div>
+
+                    ${optionsHtml}
+
+                    <div class="mt-3 pt-3 border-top">
+                        <button class="btn btn-outline-primary btn-sm fw-bold" onclick="toggleSolution(${q.id})">
+                            📖 檢視標準答案與詳細推導解析
+                        </button>
+
+                        <div id="solution-${q.id}" class="d-none mt-3">
+                            <div class="alert alert-success fw-bold py-2 mb-2">
+                                ✅ 標準答案：${escapeHtml(q.answer || '暫無答案')}
+                            </div>
+                            <div class="explanation-box">
+                                <div class="fw-bold mb-2 fs-6">📐 詳細數學推導與解析：</div>
+                                <div id="exp-content-${q.id}">${parsedExplanation}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+
+            // 自動觸發 KaTeX 數學公式渲染
+            renderMathInElement(container, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                throwOnError: false
+            });
+
+        } catch (err) {
+            container.innerHTML = `<div class="alert alert-danger">載入失敗：${err.message}</div>`;
+        }
+    }
+
+    function resetFilters() {
+        document.getElementById('filterYear').value = '';
+        document.getElementById('filterType').value = '';
+        document.getElementById('filterKeyword').value = '';
+        fetchQuestions();
+    }
+
+    function toggleSolution(id) {
+        const el = document.getElementById(`solution-${id}`);
+        if (el) {
+            el.classList.toggle('d-none');
+            // 展開時再次確認 KaTeX 渲染
+            renderMathInElement(document.getElementById(`exp-content-${id}`), {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                throwOnError: false
+            });
+        }
+    }
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    // 頁面載入時自動拉取所有題目
+    window.onload = fetchQuestions;
+</script>
+</body>
+</html>
